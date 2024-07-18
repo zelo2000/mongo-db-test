@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "MongoTest.DataMigration": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sqlDebugging": true
+    }
+  }
+}
