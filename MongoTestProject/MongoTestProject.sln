@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.DataMigration", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Core", "MongoTest.Core\MongoTest.Core.csproj", "{147145AF-6ECE-41DA-9ACE-CB0A0A3BAE78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoTest.Servises", "MongoTest.Servises\MongoTest.Servises.csproj", "{A6E244A8-67F6-4E6F-B93F-15B4D312A48A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Services", "MongoTest.Servises\MongoTest.Services.csproj", "{A6E244A8-67F6-4E6F-B93F-15B4D312A48A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

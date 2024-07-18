@@ -77,3 +77,4 @@ Create a MongoDB database for a movie streaming service with the following colle
 - [Useful Tips For Getting Started With MongoDB in .NET Core](https://nexocode.com/blog/posts/getting-started-with-mongodb-in.net-core-applications/)
 - [Create a web API with ASP.NET Core and MongoDB](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-8.0&tabs=visual-studio)
 - [MongoDBMigrations](https://bitbucket.org/i_am_a_kernel/mongodbmigrations/src/master/)
+- [Tutorial: Create a minimal API with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-8.0&tabs=visual-studio)

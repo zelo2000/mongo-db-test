@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MongoTest.Core\MongoTest.Core.csproj" />
     <ProjectReference Include="..\MongoTest.Data\MongoTest.Data.csproj" />
+    <ProjectReference Include="..\MongoTest.Servises\MongoTest.Services.csproj" />
   </ItemGroup>
 
 </Project>

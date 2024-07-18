@@ -108,40 +108,80 @@ namespace MongoTest.DataMigration.Migrations
             database.GetCollection<ReviewEntity>(_reviewCollectionName).InsertMany([
                     new ()
                     {
-                        MovieId = movies[random.Next(0, movies.Count-1)].Id,
-                        UserId = users[random.Next(0, users.Count-1)].Id,
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
                         Rating = 5,
                         ReviewText = "Amazing movie!",
                         ReviewDate = new DateTime(2021, 3, 1)
                     },
                     new ()
                     {
-                        MovieId = movies[random.Next(0, movies.Count-1)].Id,
-                        UserId = users[random.Next(0, users.Count-1)].Id,
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
                         Rating = 4,
                         ReviewText = "Great visuals and story.",
                         ReviewDate = new DateTime(2021, 6, 10)
                     },
                     new ()
                     {
-                        MovieId = movies[random.Next(0, movies.Count-1)].Id,
-                        UserId = users[random.Next(0, users.Count-1)].Id,
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
                         Rating = 5,
                         ReviewText = "Mind-blowing!",
                         ReviewDate = new DateTime(2021, 9, 15)
                     },
                     new ()
                     {
-                        MovieId = movies[random.Next(0, movies.Count-1)].Id,
-                        UserId = users[random.Next(0, users.Count-1)].Id,
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
                         Rating = 5,
                         ReviewText = "A masterpiece.",
                         ReviewDate = new DateTime(2021, 12, 20)
                     },
                     new ()
                     {
-                        MovieId = movies[random.Next(0, movies.Count-1)].Id,
-                        UserId = users[random.Next(0, users.Count-1)].Id,
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
+                        Rating = 5,
+                        ReviewText = "Unparalleled acting.",
+                        ReviewDate = new DateTime(2022, 1, 5)
+                    },
+                    new ()
+                    {
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
+                        Rating = 5,
+                        ReviewText = "Amazing movie!",
+                        ReviewDate = new DateTime(2021, 3, 1)
+                    },
+                    new ()
+                    {
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
+                        Rating = 4,
+                        ReviewText = "Great visuals and story.",
+                        ReviewDate = new DateTime(2021, 6, 10)
+                    },
+                    new ()
+                    {
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
+                        Rating = 5,
+                        ReviewText = "Mind-blowing!",
+                        ReviewDate = new DateTime(2021, 9, 15)
+                    },
+                    new ()
+                    {
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
+                        Rating = 5,
+                        ReviewText = "A masterpiece.",
+                        ReviewDate = new DateTime(2021, 12, 20)
+                    },
+                    new ()
+                    {
+                        MovieId = movies[random.Next(0, movies.Count)].Id,
+                        UserId = users[random.Next(0, users.Count)].Id,
                         Rating = 5,
                         ReviewText = "Unparalleled acting.",
                         ReviewDate = new DateTime(2022, 1, 5)
@@ -151,28 +191,28 @@ namespace MongoTest.DataMigration.Migrations
             database.GetCollection<WatchListsEntity>(_watchListsCollectionName).InsertMany([
                     new ()
                     {
-                        UserId = users[random.Next(0, users.Count-1)].Id,
-                        Movies = [movies[random.Next(0, movies.Count - 1)].Id, movies[random.Next(0, movies.Count - 1)].Id]
+                        UserId = users[0].Id,
+                        Movies = [movies[0].Id, movies[1].Id]
                     },
                     new ()
                     {
-                        UserId = users[random.Next(0, users.Count-1)].Id,
-                        Movies = [movies[random.Next(0, movies.Count - 1)].Id, movies[random.Next(0, movies.Count - 1)].Id]
+                        UserId = users[1].Id,
+                        Movies = [movies[2].Id, movies[3].Id]
                     },
                     new ()
                     {
-                            UserId = users[random.Next(0, users.Count-1)].Id,
-                        Movies = [movies[random.Next(0, movies.Count - 1)].Id]
+                            UserId = users[2].Id,
+                        Movies = [movies[4].Id]
                     },
                     new ()
                     {
-                        UserId = users[random.Next(0, users.Count-1)].Id,
-                        Movies = [movies[random.Next(0, movies.Count - 1)].Id, movies[random.Next(0, movies.Count - 1)].Id]
+                        UserId = users[3].Id,
+                        Movies = [movies[0].Id, movies[4].Id]
                     },
                     new ()
                     {
-                        UserId = users[random.Next(0, users.Count-1)].Id,
-                        Movies = [movies[random.Next(0, movies.Count - 1)].Id, movies[random.Next(0, movies.Count - 1)].Id]
+                        UserId = users[4].Id,
+                        Movies = [movies[1].Id, movies[3].Id]
                     }
                 ]);
         }

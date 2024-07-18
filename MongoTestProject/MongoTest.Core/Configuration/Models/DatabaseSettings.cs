@@ -1,4 +1,4 @@
-﻿namespace MongoTest.Core
+﻿namespace MongoTest.Core.Configuration.Models
 {
     public record DatabaseSettings
     {

@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoTest.Core.Configuration.Models;
 
-namespace MongoTest.Core
+namespace MongoTest.Core.Configuration
 {
     public static class ConfigureDatabaseSettingExtension
     {

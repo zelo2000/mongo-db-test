@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MongoTest.Core\MongoTest.Core.csproj" />
+    <ProjectReference Include="..\MongoTest.Data\MongoTest.Data.csproj" />
+  </ItemGroup>
+
 </Project>

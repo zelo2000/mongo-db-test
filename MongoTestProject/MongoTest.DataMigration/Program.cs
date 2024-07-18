@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MongoDBMigrations;
+using MongoTest.Core.Configuration;
 using System.Reflection;
-using MongoTest.Core;
 
 var configuration = BuildConfiguration();
 var databaseSettings = configuration.GetDatabaseSetting();

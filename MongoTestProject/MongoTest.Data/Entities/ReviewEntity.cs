@@ -1,5 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using MongoTest.Data.Attributes;
 
 namespace MongoTest.Data.Entities
@@ -18,7 +18,9 @@ namespace MongoTest.Data.Entities
 
         public int Rating { get; set; }
 
+        [BsonRepresentation(BsonType.String)]
         public string? ReviewText { get; set; }
+
 
         [BsonDateTimeOptions(DateOnly = true)]
         public DateTime ReviewDate { get; set; }

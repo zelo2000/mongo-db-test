@@ -1,11 +1,17 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using MongoTest.Core;
+using MongoTest.Core.Configuration.Models;
 using MongoTest.Data.Attributes;
 
 namespace MongoTest.Data.Repositories
 {
-    public class BaseRepository(IMongoClient client, IOptions<DatabaseSettings> databaseOptions)
+    public interface IBaseRepository
+    {
+        IMongoDatabase Database { get; }
+        IMongoCollection<T> GetCollection<T>(ReadPreference? readPreference = null) where T : class;
+    }
+
+    public class BaseRepository(IMongoClient client, IOptions<DatabaseSettings> databaseOptions) : IBaseRepository
     {
         public IMongoDatabase Database { get; } = client.GetDatabase(databaseOptions.Value.MoviesDatabase);
 

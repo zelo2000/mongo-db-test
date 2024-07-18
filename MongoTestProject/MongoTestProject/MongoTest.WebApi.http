@@ -1,0 +1,13 @@
+﻿@MongoTest.WebApi_HostAddress = https://localhost:7037
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/movies/director/Christopher%20Nolan
+
+###
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/movies/genre/Drama/rating/8.7
+
+###
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/reviews/rating/average
+
+###
