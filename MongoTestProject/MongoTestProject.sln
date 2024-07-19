@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.WebApi", "MongoTestProject\MongoTest.WebApi.csproj", "{317109EA-E1BA-4F2A-AFF2-388E821D8737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.WebApi", "MongoTest.WebApi\MongoTest.WebApi.csproj", "{317109EA-E1BA-4F2A-AFF2-388E821D8737}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Data", "MongoTest.Data\MongoTest.Data.csproj", "{ADA88694-45BD-4347-94C9-A5A622CB1F06}"
 EndProject
@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.DataMigration", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Core", "MongoTest.Core\MongoTest.Core.csproj", "{147145AF-6ECE-41DA-9ACE-CB0A0A3BAE78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Services", "MongoTest.Servises\MongoTest.Services.csproj", "{A6E244A8-67F6-4E6F-B93F-15B4D312A48A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoTest.Services", "MongoTest.Services\MongoTest.Services.csproj", "{A6E244A8-67F6-4E6F-B93F-15B4D312A48A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
