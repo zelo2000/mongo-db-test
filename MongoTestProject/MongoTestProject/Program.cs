@@ -25,5 +25,6 @@ app.UseHttpsRedirection();
 
 app.RegisterMoviesEndpoints();
 app.RegisterReviewEndpoints();
+app.RegisterWatchListEndpoints();
 
 app.Run();

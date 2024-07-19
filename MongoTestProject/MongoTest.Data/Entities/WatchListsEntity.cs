@@ -5,7 +5,7 @@ using MongoTest.Data.Attributes;
 namespace MongoTest.Data.Entities
 {
     [MongoCollection("watch_lists")]
-    public class WatchListsEntity
+    public record WatchListsEntity
     {
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }

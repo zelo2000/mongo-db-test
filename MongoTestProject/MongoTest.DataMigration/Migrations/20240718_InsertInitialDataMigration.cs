@@ -197,12 +197,12 @@ namespace MongoTest.DataMigration.Migrations
                     new ()
                     {
                         UserId = users[1].Id,
-                        Movies = [movies[2].Id, movies[3].Id]
+                        Movies = [movies[0].Id, movies[1].Id, movies[2].Id, movies[3].Id]
                     },
                     new ()
                     {
                             UserId = users[2].Id,
-                        Movies = [movies[4].Id]
+                        Movies = [movies[0].Id, movies[4].Id]
                     },
                     new ()
                     {
@@ -212,7 +212,7 @@ namespace MongoTest.DataMigration.Migrations
                     new ()
                     {
                         UserId = users[4].Id,
-                        Movies = [movies[1].Id, movies[3].Id]
+                        Movies = [movies[0].Id, movies[1].Id, movies[3].Id]
                     }
                 ]);
         }

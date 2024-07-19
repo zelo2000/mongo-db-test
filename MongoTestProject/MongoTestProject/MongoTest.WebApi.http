@@ -11,3 +11,15 @@ GET {{MongoTest.WebApi_HostAddress}}/api/v1/movies/genre/Drama/rating/8.7
 GET {{MongoTest.WebApi_HostAddress}}/api/v1/reviews/rating/average
 
 ###
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/movies/top/5
+
+###
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/watch-list/669a33510749863eaf222582/movies/all
+
+###
+
+GET {{MongoTest.WebApi_HostAddress}}/api/v1/watch-list/669a33510749863eaf222582/movies/count
+
+###

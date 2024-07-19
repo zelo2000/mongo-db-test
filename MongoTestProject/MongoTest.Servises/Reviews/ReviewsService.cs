@@ -33,9 +33,11 @@ namespace MongoTest.Services.Reviews
                     x => new AverageRatingReviewModel
                     {
                         MovieTitle = x.Key,
-                        AverageRating = x.Average(x => x.Rating)
+                        AverageRating = Math.Round(x.Average(x => x.Rating), 1)
                     }
-                ).ToListAsync();
+                )
+                .SortByDescending(x => x.AverageRating)
+                .ToListAsync();
 
             return test;
         }
