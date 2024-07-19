@@ -12,7 +12,7 @@ namespace MongoTest.Services.Movies
     {
         Task<List<SimpleMovieModel>> GetMoviesByDirector(string director);
         Task<List<SimpleMovieModel>> GetMoviesInGenreWithRatingHigherThan(string genre, double rating);
-        Task<List<TopViewedMovies>> GetTopViewedMovies(int amount);
+        Task<List<TopViewedMovies>> GetTopViewedMovies(int count);
     }
 
     public class MovieService(IBaseRepository baseRepository) : IMovieService
@@ -48,12 +48,12 @@ namespace MongoTest.Services.Movies
             return movies;
         }
 
-        public async Task<List<TopViewedMovies>> GetTopViewedMovies(int amount)
+        public async Task<List<TopViewedMovies>> GetTopViewedMovies(int count)
         {
             return await _baseRepository.GetCollection<MovieEntity>()
                 .Find(new BsonDocument())
                 .SortByDescending(x => x.Views)
-                .Limit(amount)
+                .Limit(count)
                 .Project(x => new TopViewedMovies
                 {
                     MovieTitle = x.Title,
