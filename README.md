@@ -72,6 +72,14 @@ Create a MongoDB database for a movie streaming service with the following colle
 
 ## Results
 
+### MongoDB collection list
+
+<img src="Images/mongodb.png" width="75%" height="auto" title="MongoDB collection list">
+
+### Swagger for MongoTest.WebApi
+
+<img src="Images/swagger.png" width="75%" height="auto" title="Swagger for MongoTest.WebApi">
+
 ## References
 
 - [Useful Tips For Getting Started With MongoDB in .NET Core](https://nexocode.com/blog/posts/getting-started-with-mongodb-in.net-core-applications/)
